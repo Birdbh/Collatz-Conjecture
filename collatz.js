@@ -25,6 +25,7 @@ function constructArray(value){
     collatzArray.push(1);
 
     //Reverse the order of the array so that the results can be showed upwards to 1 on the graph
+    alert(collatzArray.reverse());
     return collatzArray.reverse();
 }
 

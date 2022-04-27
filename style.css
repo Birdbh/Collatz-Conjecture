@@ -4,10 +4,20 @@
     font-style: oblique;
     height: 20px;
 }
+
+.container{
+    display: box;
+    text-align: center;
+}
+@media screen and (min-width: 560px) {
+    .container{
+        display: flex;
+    }
+}
+
 .floaters{
     margin: 10px;
     text-align: center;
-    display: inline-block;
     border-radius: 0.5rem;
     border-color: gray;
     border: gray;

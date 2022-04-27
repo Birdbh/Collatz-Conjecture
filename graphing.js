@@ -1,5 +1,9 @@
+//This Class Deals with the general Display Properties of the Chart from Chart JS
 
+//Inital Labels for the graph so it looks blank to start
 const baseLabels = [1,2,3,4,5]
+
+//First dataset added to the graph with no data present so there is a blank slate
 const data = {
     labels: baseLabels,
     datasets: [{
@@ -16,8 +20,11 @@ const data = {
     }]
 };
 
+//Canvas is assinged to ctx
 const ctx = document.getElementById('myChart').getContext('2d');
 
+
+//Chart is created
 const myChart = new Chart(ctx, {
     type: 'line',
     data: data,
